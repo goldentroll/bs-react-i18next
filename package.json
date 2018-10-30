@@ -1,0 +1,41 @@
+{
+  "name": "bs-react-i18next",
+  "version": "1.0.0",
+  "description": "Bucklescript bindings for react-i18next",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i18next/bs-react-i18next"
+  },
+  "scripts": {
+    "build": "bsb -clean-world -make-world",
+    "clean": "bsb -clean-world",
+    "test": "exit 0",
+    "preversion": "yarn run clean",
+    "changelog": "auto-changelog --template keepachangelog"
+  },
+  "main": "src/I18next.bs.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-i18next": ">=8.0.0",
+    "bs-platform": "^4.0.5",
+    "reason-react": ">=0.5.3"
+  },
+  "devDependencies": {
+    "bs-platform": "^4.0.6",
+    "react": "16.6.0",
+    "react-dom": "16.6.0",
+    "reason-react": ">=0.5.3"
+  },
+  "files": [
+    "src",
+    "bsconfig.json"
+  ],
+  "keywords": [
+    "react-i18next",
+    "react",
+    "reason",
+    "reasonml",
+    "ocaml",
+    "bucklescript"
+  ]
+}
